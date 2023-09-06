@@ -1,0 +1,43 @@
+CREATE TABLE usuarios (
+    id INT PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    telefone VARCHAR(15),
+    senha VARCHAR(255) NOT NULL
+);
+
+INSERT INTO usuarios
+VALUES (1, 'Ana Oliveira', 'ana@example.com', '555123789', 'senha789');
+
+INSERT INTO usuarios 
+VALUES (2, 'Carlos Pereira', 'carlos@example.com', '987123456', 'senhaabc');
+
+INSERT INTO usuarios 
+VALUES (3, 'Laura Fernandes', 'laura@example.com', '333555777', 'senhalaura');
+
+INSERT INTO usuarios 
+VALUES (4, 'Pedro Santos', 'pedro@example.com', '444666888', 'senhapedro');
+
+INSERT INTO usuarios 
+VALUES (5, 'Mariana Costa', 'mariana@example.com', '999111222', 'senhamariana');
+
+INSERT INTO usuarios 
+VALUES (6, 'Lucas Almeida', 'lucas@example.com', '777888999', 'senhalucas');
+
+INSERT INTO usuarios 
+VALUES (7, 'Isabela Sousa', 'isabela@example.com', '123987654', 'senhaisabela');
+
+INSERT INTO usuarios
+VALUES (8, 'Rafael Lima', 'rafael@example.com', '222444666', 'senharafael'); 
+
+INSERT INTO usuarios
+VALUES (9, 'Julia Silva', 'julia@example.com', '111333555', 'senhajulia');
+
+INSERT INTO usuarios
+VALUES (10, 'Gustavo Ferreira', 'gustavo@example.com', '555666777', 'senhagustavo');
+
+SELECT * FROM usuarios 
+WHERE nome = 'Ana Oliveira' OR '1' = '1'
+
+SELECT * FROM usuarios 
+WHERE nome = '' OR '1' = '1' LIMIT 1;
