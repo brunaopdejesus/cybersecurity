@@ -13,19 +13,14 @@ users = {'user1': 'password1', 'user2': 'password2'}
  
 
 @app.route('/')
-
 def home():
-
     return render_template('login.html')
 
  
-
 @app.route('/login', methods=['POST'])
-
 def login():
 
     username = request.form['username']
-
     password = request.form['password']
 
  
